@@ -23,12 +23,12 @@ int main(void)
                 val=11;
                 break;
             case 'X':
-                printf("the input is over\n");
+                printf("输入结束\n");
                 continue;
             default:
                 val=atoi(card_name);
                 if( (val<1) || (val>10)) {
-                    printf("I can't know the card\n");
+                    printf("请输入正确的纸牌\n");
                     continue;
                 }
         }
@@ -36,7 +36,7 @@ int main(void)
             count++;
         else if(val==10)
             count--;
-        printf("the current num is %i\n",count);
+        printf("牌的点数是 %i\n",count);
 
     }while (card_name[0]!='X');
     return 0;
